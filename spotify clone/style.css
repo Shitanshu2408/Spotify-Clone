@@ -1,0 +1,299 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+
+.right{
+    width: 75vw;
+}
+
+
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.home ul li:hover{
+    color: grey;
+}
+
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading h2:hover{
+    color: grey;
+}
+
+.heading img{
+    width: 30px;
+}
+
+
+
+.library{
+    min-height: 80vh;
+    position: relative;
+
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer a{
+    color: grey;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(11, 11, 11, 0.801);
+    border-radius: 5px;
+    position: relative;
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.spotifyPlayists{
+    padding: 7px;
+}
+
+.cardContainer{
+    margin-top: 10px ;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+ .card{
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(29, 29, 29);
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px 2px grey;
+}
+
+.card h2:hover{
+    color: green;
+}
+
+.card p:hover{
+    color: grey;
+}
+
+.card > *{
+    padding-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+}
+
+.showAll{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    color: grey;
+}
+
+.showAll:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+.card-1{
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.card h2{
+    font-size: large;
+}
+.card p{
+    font-size: small;
+}
+
+.card .play {
+    position: absolute;
+    bottom: 18px; 
+    right: 8px; 
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+
+.card:hover .play {
+    display: block;
+    transform: scale(1.1);
+    filter: invert(1);
+}
+
+
+.page .forward-icon{
+width: 32px;
+height: 32px;
+filter: invert(1);
+margin-bottom: 2px;
+}
+
+.page .forward-icon:hover{
+    transform: scale(1.2);
+    border-radius: 50%;
+ }
+
+.page .backward-icon{
+    width: 35px;
+    height: 35px;
+    filter: invert(1);
+ }
+
+ .page .backward-icon:hover{
+    transform: scale(1.2);
+    border-radius: 50%;
+ }
+
+ .buttons .signup {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    gap: 5px;
+    background: transparent;
+    border: 1px  rgb(7, 7, 7); 
+}
+
+.buttons .signup:hover {
+    font-weight: 500;
+    color:grey;
+   transform: scale(1.2);
+}
+
+.buttons .login{
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    color: black;
+    border: 1px solid rgb(14, 14, 14);
+}
+
+.buttons .login:hover{
+    font-weight: 500;
+    color: rgb(10, 10, 10);
+    transform: scale(1.10);
+}
+
+.footerRight{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    padding: 10px 20px 8px 12px;
+}
+
+.footerRight p{
+    color: grey;
+    margin-top: 10px;
+}
+
+.footerRight p:hover{
+    color: white;
+    text-decoration:underline;
+}
+
+.share img{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    padding: 10px 12px;
+}
+
+.share img:hover{
+   transform: scale(1.3);
+}
+
+.notes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes h3{
+    margin-left: 12px;
+}
+
+.notes h3:hover{
+    color: grey;
+}
+
+.notes img{
+    height: 25px;
+    width: 25px;
+    filter: invert(1);
+}
+
+.notes img:hover{
+    transform: scale(1.2);
+}
+
+.empty{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.credit{
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    font-size: small;
+    margin-bottom: 5px;
+}
